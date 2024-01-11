@@ -1,0 +1,783 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@font-face {
+    font-family: Estedad-VF Thin;
+    src: url('../fonts/Estedad-VF\ Thin.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    color: #ffffff;
+    transition: .2s linear;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    font-size: 100%;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 8%;
+}
+
+
+header #toggler{
+    display: none;
+}
+
+header .fas{
+    font-size: 1.5rem;
+    color: #2BF6FA;
+    padding: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+header .navbar{
+    display: flex;
+}
+
+header .navbar a{
+    font-family: "Estedad-VF Thin";
+    font-size: 1rem;
+    padding: 0 2.1rem;
+    transition: color 0.3s ease;
+    position: relative;
+    z-index: 100;
+}
+
+header .navbar a:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    background-color: #2BF6FA; 
+    position: absolute;
+    top: 25px;
+    transition: width 0.3s ease; 
+  }
+
+  header .navbar a:hover {
+    color: #6fe3e5;
+  }
+  
+ header .navbar a:hover:after {
+    width: 50%; 
+  }
+
+header .navbar p{
+    color: #2BF6FA;
+}
+
+.homepage{
+    display: flex;
+    align-items: center;
+    margin: 0 120px;
+}
+
+.homepage .left-homepage .content-homepage h1{
+    font-family: 'Alfa Slab One', serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 3.6rem;
+    margin-bottom: 40px;
+}
+
+.homepage .left-homepage .content-homepage p{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.integrated{
+    margin-bottom: 40px;
+}
+
+.homepage .left-homepage .content-homepage .details{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 2rem;
+    margin-bottom: 40px;
+}
+
+.months h2, .months h3 {
+    display: inline-block; 
+  }
+
+
+
+.months h3{
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.homepage .left-homepage .content-homepage p:not(button p):not(p:nth-child(5)){
+    font-weight: 500;
+    font-size: 1rem;
+    color: #808080;
+}
+
+.details-star img{
+    width: 2.2rem;
+}
+
+.details h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 2.1rem;
+}
+
+button{
+    background-color: #2BF6FA;
+    padding: 22.7px;
+    margin-bottom: 40px;
+}
+
+button:hover{
+    background-color: #079496;
+}
+
+button h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+}
+
+button p{
+    font-family: 'Inter', sans-serif;
+    font-size: .7rem;
+    font-weight: 600;
+    color: black;
+}
+
+.homepage .left-homepage .content-homepage h4{
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: #35FCFB;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    
+}
+
+.homepage .left-homepage .content-homepage .image-left{
+    display: flex;
+}
+
+.homepage .left-homepage .content-homepage .image-left .afterpay{
+    margin-right: 2.7rem;
+}
+
+.background{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 13%;
+    z-index: 0;
+}
+
+.main-image{
+    position: relative;
+    width: 100%;
+} 
+
+.three-armonial{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.three-armonial img:nth-child(2){
+    height: 72.5px;
+    width: 256.52px;
+}
+
+.three-armonial img{
+    margin: 64px;
+}
+
+.massagegun{
+    font-family: 'Alfa Slab One', serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 6.5rem;
+    opacity: 10%;
+    margin: 0 5rem;
+}
+
+
+
+/* different */
+
+.different{
+    display: flex;
+    margin: 40px 120px 80px 120px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-different{
+    width: 60%;
+    margin-left: 30px;
+}
+
+.main-different{
+    display: flex;
+    flex-direction: row;
+}
+
+.left-content-different{
+    width: 50%;
+
+}
+
+.right-content-different{
+    width: 50%;
+}
+
+.text-different h1{
+    font-family: 'Alfa Slab One', serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 3.1rem;
+}
+
+.text-different p{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #808080;
+}
+
+.tittle-different{
+    margin-bottom: 60px;
+}
+
+.item-different{
+    display: flex;
+    margin: 1rem 0;
+    align-items: center;
+}
+
+.item-different img{
+    margin-right: 1rem;
+}
+
+.item-different:nth-child(5){
+    margin-bottom: 0;
+}
+
+.image-different{
+    width: 40%;
+}
+
+.image-different img{
+    width: 100%;
+}
+
+.main-different img{
+    transition: transform 0.3s ease-in-out; 
+}
+  
+.main-different img:hover {
+    transform: translateY(-20px); 
+  }
+  
+
+/* benefits */
+
+.benefits{
+    display: flex;
+    margin: 40px 120px 80px 120px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-benefits{
+    width: 60%;
+    margin-right: 30px;
+}
+
+.main-benefits{
+    display: flex;
+    flex-direction: row;
+}
+
+.left-content-benefits{
+    width: 50%;
+}
+
+.right-content-benefits{
+    width: 50%;
+}
+
+.text-benefits h1{
+    font-family: 'Alfa Slab One', serif;
+    font-weight: 400;
+    font-size: 3.1rem;
+}
+
+.text-benefits p{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #808080;
+}
+
+.tittle-benefits{
+    margin-bottom: 60px;
+}
+
+.item-benefits{
+    display: flex;
+    margin: 1rem 0;
+    align-items: center;
+}
+
+
+
+.item-benefits img{
+    margin-right: 1rem;
+}
+
+.item-benefits:nth-child(4){
+    margin-bottom: 0;
+}
+
+.image-benefits{
+    width: 40%;
+    margin: 1rem 0;
+}
+
+.image-benefits img{
+    width: 100%;
+}
+
+.main-benefits img{
+    transition: transform 0.3s ease-in-out; 
+}
+  
+.main-benefits img:hover {
+    transform: translateY(-20px); 
+  }
+
+.banner{
+    margin: 40px 0 80px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #1B1B1B;
+}
+
+.image-banner{
+    flex: 1; 
+    text-align: center; 
+}
+
+.content-banner{
+    text-align: right;
+      padding: 97px 0;
+      height: 100%;
+      flex: 1;
+      background-image: url('images/detail-banner.png');
+      background-size: contain; 
+      background-repeat: no-repeat;
+      background-position: left center; 
+}
+
+.content-banner h1{
+    font-family: 'Alfa Slab One', serif;
+    padding-right: 120px;
+    font-weight: 400;
+    font-size: 4.5rem;
+}
+
+.content-banner h1:nth-child(2n+1){
+    color: #000000;
+    -webkit-text-stroke: .5px #ffffff; 
+}
+
+.content-banner h1:last-child{
+    position: relative;
+}
+
+.content-banner h1:last-child::after{
+    content: '';
+    display: block;
+    width: 165px; 
+    height: 2px; 
+    background-color: #ffffff; 
+    position: absolute;
+    top: 130px;
+    right: 120px;
+}
+
+.include{
+    margin: 40px 120px 80px 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+  .include-image img{
+    width: 100%;
+  }
+
+  .include-content{
+    width: 50%;
+    margin-left: 95px;
+  }  
+
+  .include-image{
+    width: 50%;
+
+  }
+
+  .include-content h2{
+    font-family: 'Alfa Slab One', serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .include-content ul li{
+    margin-left: 2rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #808080;
+  }
+
+footer{
+    text-align: center;
+}
+
+.text p{
+    font-size: 1.1rem;
+    color: #AEAEAE;
+    margin: 1rem 0;
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .videos {
+    position: relative;
+  }
+
+  .videos img:first-child {
+    width: 100%;
+  }
+
+  .play-video {
+    width: 22%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  .buynow{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .buynow button{
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #000000;
+    padding: 1rem 3rem;
+  }
+
+@media (max-width:991px) {
+    html{
+        font-size: 95%;
+    }
+
+    header{
+        padding: 2rem 1%;
+    }
+
+    header .navbar a{
+        padding: 0 1.7rem;
+        color: #ffffff;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .background{
+        display: none;
+    
+    }
+    /* different */
+    .different{
+        flex-direction: column;
+    }
+
+    .text-different{
+        width: 100%;
+        margin-left: 0;
+
+    }
+
+    .tittle-different{
+        margin: 40px 0;
+    }
+    
+    .main-different{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left-content-different{
+        width: 100%;
+    }
+    
+    .right-content-different{
+        width: 100%;
+    }
+    
+    .image-different{
+        width: 100%;
+    }
+
+    .text-different h1{
+        font-size: 2rem;
+    }
+
+    .different{
+        margin: 100px 2rem;
+    }
+
+    .tittle-different{
+        margin-bottom: 1rem;
+    }
+    /* benefits */
+
+    .benefits{
+        flex-direction: column;
+    }
+
+    .text-benefits{
+        width: 100%;
+    }
+    
+    .main-benefits{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left-content-benefits{
+        width: 100%;
+    }
+    
+    .right-content-benefits{
+        width: 100%;
+    }
+    
+    .image-benefits{
+        width: 100%;
+    }
+
+    .benefits{
+        margin: 0 3rem 80px 3rem;
+    }
+
+    .tittle-benefits{
+        margin-bottom: 1rem;
+    }
+
+    .text-benefits h1{
+        font-size: 2rem;
+
+    }
+
+    .banner{
+        flex-direction: column;
+    }
+
+    .content-banner{
+        padding: 2rem;
+        background-position: center; 
+        text-align: left;
+    }
+
+  .content-banner h1{
+    font-size: 2.5rem; 
+    padding: 0;
+
+}
+
+.content-banner h1:last-child::after{
+    width: 85px; 
+    height: 2px; 
+    background-color: #ffffff;
+    position: absolute;
+    top: 55px;
+    right: 3.2rem;
+}
+
+.image-banner img{
+    width: 100%;
+}
+    
+    .main-image{
+        display: none;
+    } 
+
+    .massagegun{
+        margin: 0 2rem;
+        font-size: 4.5rem;
+    }
+
+    .include{
+        flex-direction: column;
+        margin: 0 2rem;
+    }
+
+    
+
+    .include-image{
+        width: 100%;
+    }
+
+    .include-content{
+        margin: 50px;
+        width: 100%;
+      }
+      
+      .include-content h2{
+        margin-left: 1rem;
+      }
+
+    .include-content ul li{
+        margin-left: 2rem;
+      }
+    
+}
+
+@media (max-width:768px) {
+
+    header .fas{
+        display: block;
+        position: absolute;
+        right: 10px;
+    }
+
+    header .navbar{
+        display: block;
+        position: absolute;
+        top: 8rem;
+        right: 0;
+        min-width: 375px;
+        border-radius: .5rem;
+        z-index: 100;
+        height: 600px;
+    }
+
+    header .navbar a{
+        padding: 0 0;
+        display: block;
+        margin: 2rem;
+        border-bottom: 1px solid #2BF6FA; 
+        padding-bottom: 2rem; 
+        display: block;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); 
+    }
+
+    header .navbar a:last-child{
+        border-bottom: 1px solid #000000; 
+    }
+
+    header #toggler:checked ~ .navbar a{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      }
+      
+      header #toggler:checked ~ label[for="toggler"].fas.fa-bars {
+        display: none;
+    }
+    header #toggler:checked ~ label[for="toggler"].fas.fa-x {
+        display: inline-block;
+    }
+
+    header #toggler:checked ~ .navbar {
+        background-color: #000000;
+    }
+      
+
+    header .navbar a:after {
+        display: block;
+        height: 2px;
+        width: 0;
+        background-color: #2BF6FA; 
+        position: absolute;
+        bottom: 30px; 
+        transition: width 0.3s ease; 
+      }
+
+    header .navbar a:hover:after {
+        width: 20%; 
+      }
+
+    header .navbar p{
+        display: none;
+    }
+
+    .homepage{
+        margin: 5rem 2rem;
+    }
+
+    .three-armonial{
+        flex-direction: column;
+    }
+
+    .three-armonial{
+        margin: 80px 0;
+    }
+
+    .massagegun{
+        font-size: 3rem;
+    }
+
+    
+
+    .buynow button{
+        font-size: 1.2rem;
+
+      }
+}
+
+@media (max-width:450px) {
+
+    .buynow button{
+        font-size: 1rem;
+      }
+}
+
+
+
+
